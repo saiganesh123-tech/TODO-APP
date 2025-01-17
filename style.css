@@ -1,0 +1,117 @@
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the To-Do application */
+#todoContainer {
+    background-color: #ffffff; /* White background for the container */
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+}
+
+/* Styling the header */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Styling the task input form */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* To-Do List Styling */
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #f9f9f9; /* Light grey for task background */
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#todoList li:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #f1f1f1; /* Slightly darker grey */
+}
+
+/* Checkbox for task completion */
+#todoList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Delete button */
+#todoList li button {
+    background-color: #ff4d4f; /* Red button */
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todoList li button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Completed tasks styling */
+#todoList li.completed {
+    text-decoration: line-through;
+    color: #aaaaaa;
+    background-color: #e8e8e8; /* Light grey for completed tasks */
+}
+/* Completed task styling */
+.completed {
+    text-decoration: line-through;
+    color: #aaaaaa;
+}
